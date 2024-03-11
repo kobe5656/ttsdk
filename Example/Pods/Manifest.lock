@@ -1,0 +1,136 @@
+PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - BANetManager (2.4.0):
+    - AFNetworking
+    - YYCache
+  - CocoaAsyncSocket (7.6.5)
+  - FMDB/SQLCipher (2.7.5):
+    - SQLCipher
+  - GMenuController (0.0.6)
+  - IQKeyboardManager (6.5.11)
+  - JSONModel (1.7.0)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.2.0)
+  - MJRefresh (3.7.6)
+  - OpenSSL-Universal (1.1.1900)
+  - Protobuf (3.21.12)
+  - SDWebImage (5.18.11):
+    - SDWebImage/Core (= 5.18.11)
+  - SDWebImage/Core (5.18.11)
+  - SocketRocket (0.6.0)
+  - SQLCipher (4.5.3):
+    - SQLCipher/standard (= 4.5.3)
+  - SQLCipher/common (4.5.3)
+  - SQLCipher/standard (4.5.3):
+    - SQLCipher/common
+  - Toast (4.0.0)
+  - TTSDK (0.1.0):
+    - AFNetworking (~> 4.0.1)
+    - BANetManager
+    - CocoaAsyncSocket
+    - FMDB/SQLCipher (~> 2.5)
+    - GMenuController
+    - IQKeyboardManager
+    - JSONModel (= 1.7.0)
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - OpenSSL-Universal
+    - Protobuf (~> 3.21.12)
+    - SDWebImage
+    - SocketRocket
+    - Toast
+    - TZImagePickerController
+    - YBImageBrowser
+    - YBImageBrowser/Video
+    - YYText (~> 1.0.7)
+  - TZImagePickerController (3.8.4):
+    - TZImagePickerController/Basic (= 3.8.4)
+    - TZImagePickerController/Location (= 3.8.4)
+  - TZImagePickerController/Basic (3.8.4)
+  - TZImagePickerController/Location (3.8.4)
+  - YBImageBrowser (3.0.9):
+    - YBImageBrowser/Core (= 3.0.9)
+  - YBImageBrowser/Core (3.0.9):
+    - SDWebImage (>= 5.0.0)
+    - YYImage
+  - YBImageBrowser/Video (3.0.9):
+    - YBImageBrowser/Core
+  - YYCache (1.0.4)
+  - YYImage (1.0.4):
+    - YYImage/Core (= 1.0.4)
+  - YYImage/Core (1.0.4)
+  - YYText (1.0.7)
+
+DEPENDENCIES:
+  - TTSDK (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - BANetManager
+    - CocoaAsyncSocket
+    - FMDB
+    - GMenuController
+    - IQKeyboardManager
+    - JSONModel
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - OpenSSL-Universal
+    - Protobuf
+    - SDWebImage
+    - SocketRocket
+    - SQLCipher
+    - Toast
+    - TZImagePickerController
+    - YBImageBrowser
+    - YYCache
+    - YYImage
+    - YYText
+
+EXTERNAL SOURCES:
+  TTSDK:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
+  BANetManager: 90216c8200587192c1f76bbd1d96f71f0094699e
+  CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  GMenuController: c7712947635f972cd00e62a52b6276bfab24bfc6
+  IQKeyboardManager: ef43ce1ba1e5aaf4adf222c0a46f39761f246879
+  JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MJRefresh: 2fe7fb43a5167ceda20bb7e63f130c04fd1814a5
+  OpenSSL-Universal: 84efb8a29841f2764ac5403e0c4119a28b713346
+  Protobuf: 120350fc38646e2dedc26f49ecba778184ea1de2
+  SDWebImage: a3ba0b8faac7228c3c8eadd1a55c9c9fe5e16457
+  SocketRocket: fccef3f9c5cedea1353a9ef6ada904fde10d6608
+  SQLCipher: 57fa9f863fa4a3ed9dd3c90ace52315db8c0fdca
+  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
+  TTSDK: 003ea8b8f934eaf312e4fde82880bda9bbe23681
+  TZImagePickerController: f1c9f1cae6ac0e30b31aaa9698f9bf4a7cf5b84f
+  YBImageBrowser: 7ecc8bf33ffa5f3b94c397c29b4f3638dd37f527
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+  YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
+
+PODFILE CHECKSUM: 69090f39253fd43ed0e04a56121caeea444529cb
+
+COCOAPODS: 1.11.3

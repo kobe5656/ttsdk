@@ -1,0 +1,90 @@
+{
+  "name": "TTSDK",
+  "version": "0.1.0",
+  "summary": "A short description of TTSDK.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/lxl/TTSDK",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "TTk": "kobe969696@proton.me"
+  },
+  "source": {
+    "git": "https://github.com/kobe5656/ttsdk.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "static_framework": true,
+  "source_files": "TTSDK/Classes/**/*",
+  "vendored_frameworks": [
+    "TTSDK/Classes/TkfSDK.framework"
+  ],
+  "resource_bundles": {
+    "Resources": "TTSDK/Assets/TkfBundle.bundle"
+  },
+  "public_header_files": "Pod/Classes/**/*.h",
+  "frameworks": "UIKit",
+  "dependencies": {
+    "AFNetworking": [
+      "~> 4.0.1"
+    ],
+    "BANetManager": [
+
+    ],
+    "MJRefresh": [
+
+    ],
+    "JSONModel": [
+      "1.7.0"
+    ],
+    "Masonry": [
+
+    ],
+    "SDWebImage": [
+
+    ],
+    "IQKeyboardManager": [
+
+    ],
+    "TZImagePickerController": [
+
+    ],
+    "MBProgressHUD": [
+
+    ],
+    "OpenSSL-Universal": [
+
+    ],
+    "CocoaAsyncSocket": [
+
+    ],
+    "Protobuf": [
+      "~> 3.21.12"
+    ],
+    "FMDB/SQLCipher": [
+      "~> 2.5"
+    ],
+    "YBImageBrowser": [
+
+    ],
+    "YBImageBrowser/Video": [
+
+    ],
+    "YYText": [
+      "~> 1.0.7"
+    ],
+    "SocketRocket": [
+
+    ],
+    "GMenuController": [
+
+    ],
+    "Toast": [
+
+    ]
+  }
+}

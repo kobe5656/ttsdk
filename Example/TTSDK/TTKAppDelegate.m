@@ -7,12 +7,14 @@
 //
 
 #import "TTKAppDelegate.h"
+#import <TkfSDK/TtalkSDKManager.h>
 
 @implementation TTKAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [[TtalkSDKManager manager] setupSDKWithDomain:@"" andMerchantAccessMethodId:@""];
     return YES;
 }
 

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TTSDK'
-  s.version          = '0.1.0'
+  s.version          = '0.1.6'
   s.summary          = 'A short description of TTSDK.'
 
 # This description is used to generate tags and improve search results.
@@ -21,22 +21,67 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/lxl/TTSDK'
+  s.homepage         = 'https://github.com/kobe5656/ttsdk.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'lxl' => 'aa14@qq.com' }
-  s.source           = { :git => 'https://github.com/lxl/TTSDK.git', :tag => s.version.to_s }
+  s.author           = { 'TTk' => 'kobe969696@proton.me' }
+  s.source           = { :git => 'https://github.com/kobe5656/ttsdk.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '12.0'
+
+  s.static_framework = true
 
   s.source_files = 'TTSDK/Classes/**/*'
   
   # s.resource_bundles = {
   #   'TTSDK' => ['TTSDK/Assets/*.png']
   # }
+  s.vendored_frameworks = ['TTSDK/Classes/TkfSDK.framework'] #自己的framework在工程中的路径
+  s.resource_bundles = {
+      'Resources' => 'TTSDK/Assets/TkfBundle.bundle'
+  }#资源文件的路径，会在pod中创建“Resources”的文件夹
+  
+   s.public_header_files = 'Pod/Classes/**/*.h'
+   s.frameworks = 'UIKit'
+  
+   s.dependency 'AFNetworking','~> 4.0.1'
+  
+   s.dependency 'BANetManager'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+   s.dependency 'MJRefresh'
+
+   s.dependency 'JSONModel', '1.7.0'
+
+   s.dependency 'Masonry'
+
+   s.dependency 'SDWebImage'
+
+   s.dependency 'IQKeyboardManager'
+   
+   s.dependency 'TZImagePickerController' #iOS8 and later
+
+   s.dependency 'MBProgressHUD'
+
+   s.dependency 'OpenSSL-Universal'
+
+   s.dependency 'CocoaAsyncSocket'
+
+   s.dependency 'Protobuf', '~> 3.21.12'
+
+   s.dependency 'FMDB/SQLCipher', '~> 2.5'
+
+   s.dependency 'YBImageBrowser'
+
+   s.dependency 'YBImageBrowser/Video'
+
+   s.dependency 'YYText','~> 1.0.7'
+
+   s.dependency 'SocketRocket'
+
+   s.dependency 'GMenuController'
+
+   s.dependency 'Toast'
+  
+  
 end

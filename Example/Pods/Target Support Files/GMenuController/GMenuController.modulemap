@@ -1,0 +1,6 @@
+framework module GMenuController {
+  umbrella header "GMenuController-umbrella.h"
+
+  export *
+  module * { export * }
+}

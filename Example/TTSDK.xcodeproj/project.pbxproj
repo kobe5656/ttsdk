@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10A09D112B9B1581000A187C /* OpenSSL.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10A09D102B9B1581000A187C /* OpenSSL.xcframework */; };
+		10A09D122B9B1581000A187C /* OpenSSL.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 10A09D102B9B1581000A187C /* OpenSSL.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1D41899A7E424C354FEE5054 /* Pods_TTSDK_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA3B66CD485824B6317A3EC /* Pods_TTSDK_Tests.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -36,10 +38,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		10A09D132B9B1582000A187C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				10A09D122B9B1581000A187C /* OpenSSL.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		2720A239E4F8FB94C1CF648A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		10A09D102B9B1581000A187C /* OpenSSL.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = OpenSSL.xcframework; path = "Pods/OpenSSL-Universal/Frameworks/OpenSSL.xcframework"; sourceTree = "<group>"; };
+		2720A239E4F8FB94C1CF648A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		3BA3B66CD485824B6317A3EC /* Pods_TTSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TTSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4F617FFCB90D77C09C04A3F5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		4F617FFCB90D77C09C04A3F5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* TTSDK_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTSDK_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -65,7 +82,7 @@
 		86FE018CC8011F3D861E0717 /* Pods_TTSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TTSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		88C3756754542C78DD1081CC /* Pods-TTSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTSDK_Tests.release.xcconfig"; path = "Target Support Files/Pods-TTSDK_Tests/Pods-TTSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		D76C7EF9822AC3417ED58DB7 /* TTSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = TTSDK.podspec; path = ../TTSDK.podspec; sourceTree = "<group>"; };
+		D76C7EF9822AC3417ED58DB7 /* TTSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TTSDK.podspec; path = ../TTSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		DCF8DF9A94AA3A84F11F8794 /* Pods-TTSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTSDK_Example.debug.xcconfig"; path = "Target Support Files/Pods-TTSDK_Example/Pods-TTSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10A09D112B9B1581000A187C /* OpenSSL.xcframework in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
@@ -119,6 +137,7 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				10A09D102B9B1581000A187C /* OpenSSL.xcframework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
@@ -193,7 +212,6 @@
 				694D08A5C0D8CA666E47621F /* Pods-TTSDK_Tests.debug.xcconfig */,
 				88C3756754542C78DD1081CC /* Pods-TTSDK_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -209,6 +227,8 @@
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				A9436CEC4AFC9F5F8912DAB4 /* [CP] Embed Pods Frameworks */,
+				F61D9DB7DE6D71A2D3FF9D14 /* [CP] Copy Pods Resources */,
+				10A09D132B9B1582000A187C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -248,6 +268,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = lxl;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = A7THJ6CNTN;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -258,6 +281,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -346,15 +370,71 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TTSDK_Example/Pods-TTSDK_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/TTSDK/TTSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/BANetManager/BANetManager.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/GMenuController/GMenuController.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SQLCipher/SQLCipher.framework",
+				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
+				"${BUILT_PRODUCTS_DIR}/TZImagePickerController/TZImagePickerController.framework",
+				"${BUILT_PRODUCTS_DIR}/Toast/Toast.framework",
+				"${BUILT_PRODUCTS_DIR}/YBImageBrowser/YBImageBrowser.framework",
+				"${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework",
+				"${BUILT_PRODUCTS_DIR}/YYImage/YYImage.framework",
+				"${BUILT_PRODUCTS_DIR}/YYText/YYText.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BANetManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GMenuController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLCipher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TZImagePickerController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YBImageBrowser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYCache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYText.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TTSDK_Example/Pods-TTSDK_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F61D9DB7DE6D71A2D3FF9D14 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TTSDK_Example/Pods-TTSDK_Example-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/TTSDK/Resources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Resources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TTSDK_Example/Pods-TTSDK_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -494,10 +574,93 @@
 			baseConfigurationReference = DCF8DF9A94AA3A84F11F8794 /* Pods-TTSDK_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = A7THJ6CNTN;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TTSDK/TTSDK-Prefix.pch";
 				INFOPLIST_FILE = "TTSDK/TTSDK-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MODULE_NAME = ExampleApp;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"icucore\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"AssetsLibrary\"",
+					"-framework",
+					"\"BANetManager\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CocoaAsyncSocket\"",
+					"-framework",
+					"\"CoreFoundation\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"GMenuController\"",
+					"-framework",
+					"\"IQKeyboardManager\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"JSONModel\"",
+					"-framework",
+					"\"MBProgressHUD\"",
+					"-framework",
+					"\"MJRefresh\"",
+					"-framework",
+					"\"Masonry\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"OpenSSL\"",
+					"-framework",
+					"\"Photos\"",
+					"-framework",
+					"\"PhotosUI\"",
+					"-framework",
+					"\"Protobuf\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"SQLCipher\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SocketRocket\"",
+					"-framework",
+					"\"TTSDK\"",
+					"-framework",
+					"\"TZImagePickerController\"",
+					"-framework",
+					"\"TkfSDK\"",
+					"-framework",
+					"\"Toast\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"YBImageBrowser\"",
+					"-framework",
+					"\"YYCache\"",
+					"-framework",
+					"\"YYImage\"",
+					"-framework",
+					"\"FMDB\"",
+					"-framework",
+					"\"YYText\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -510,10 +673,93 @@
 			baseConfigurationReference = 6F03A6AE585D406269BE31A3 /* Pods-TTSDK_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = A7THJ6CNTN;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TTSDK/TTSDK-Prefix.pch";
 				INFOPLIST_FILE = "TTSDK/TTSDK-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MODULE_NAME = ExampleApp;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"icucore\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"AssetsLibrary\"",
+					"-framework",
+					"\"BANetManager\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CocoaAsyncSocket\"",
+					"-framework",
+					"\"CoreFoundation\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"GMenuController\"",
+					"-framework",
+					"\"IQKeyboardManager\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"JSONModel\"",
+					"-framework",
+					"\"MBProgressHUD\"",
+					"-framework",
+					"\"MJRefresh\"",
+					"-framework",
+					"\"Masonry\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"OpenSSL\"",
+					"-framework",
+					"\"Photos\"",
+					"-framework",
+					"\"PhotosUI\"",
+					"-framework",
+					"\"Protobuf\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"SQLCipher\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SocketRocket\"",
+					"-framework",
+					"\"TTSDK\"",
+					"-framework",
+					"\"TZImagePickerController\"",
+					"-framework",
+					"\"TkfSDK\"",
+					"-framework",
+					"\"Toast\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"YBImageBrowser\"",
+					"-framework",
+					"\"YYCache\"",
+					"-framework",
+					"\"YYImage\"",
+					"-framework",
+					"\"FMDB\"",
+					"-framework",
+					"\"YYText\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
