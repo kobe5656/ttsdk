@@ -42,7 +42,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) int websocketPort;
 @property (nonatomic, assign) BOOL isInRoom;
 @property (nonatomic, assign) BOOL rate;//评价
-
 @property(nonatomic,strong)NSDictionary *MerchantAccessMethod;
 @property(nonatomic,strong)NSDictionary *systemSettingVO;
 @property(nonatomic,strong)NSArray *promotionMsgList;

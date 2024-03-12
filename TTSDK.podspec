@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TTSDK'
-  s.version          = '0.1.6'
-  s.summary          = 'A short description of TTSDK.'
+  s.version          = '0.1.7'
+  s.summary          = 'A short description of TkfSDK.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/kobe5656/ttsdk.git'
+  s.homepage         = 'https://github.com/kobe5656'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'TTk' => 'kobe969696@proton.me' }
@@ -45,7 +45,7 @@ TODO: Add long description of the pod here.
    s.public_header_files = 'Pod/Classes/**/*.h'
    s.frameworks = 'UIKit'
   
-   s.dependency 'AFNetworking','~> 4.0.1'
+   s.dependency 'AFNetworking'
   
    s.dependency 'BANetManager'
 
