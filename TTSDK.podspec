@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TTSDK'
-  s.version          = '0.2.5'
+  s.version          = '0.2.6'
   s.summary          = 'A short description of TkfSDK.'
 
 # This description is used to generate tags and improve search results.
@@ -80,7 +80,7 @@ TODO: Add long description of the pod here.
 
    s.dependency 'YBImageBrowser/Video'
 
-   s.dependency 'YYText',
+   s.dependency 'YYText'
 
    s.dependency 'SocketRocket'
 
