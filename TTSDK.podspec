@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TTSDK'
-  s.version          = '0.3.1'
+  s.version          = '1.0.0'
   s.summary          = 'A short description of TkfSDK.'
 
 # This description is used to generate tags and improve search results.
@@ -65,8 +65,6 @@ TODO: Add long description of the pod here.
    s.dependency 'IQKeyboardManager'
    
    s.dependency 'TZImagePickerController' #iOS8 and later
-
-   s.dependency 'MBProgressHUD'
 
    s.dependency 'OpenSSL-Universal'
 
