@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TTSDK'
-  s.version          = '0.2.9'
+  s.version          = '0.3.0'
   s.summary          = 'A short description of TkfSDK.'
 
 # This description is used to generate tags and improve search results.
@@ -40,9 +40,7 @@ TODO: Add long description of the pod here.
 #   }
   s.vendored_frameworks = ['TTSDK/Classes/TkfSDK.framework'] #自己的framework在工程中的路径
   s.resource_bundles = {
-#      'Resources' => 'TTSDK/Assets/TkfBundle.bundle'
-    'Resources' => 'TTSDK/Assets/*'
-
+      'Resources' => 'TTSDK/Assets/TkfBundle.bundle'
   }#资源文件的路径，会在pod中创建“Resources”的文件夹
 #s.resource_bundles = {
 #    'TTSDK' => 'TTSDK/Assets/**/*.{xcassets,png,xib,storyboard}'
