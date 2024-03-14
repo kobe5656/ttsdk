@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TTSDK'
-  s.version          = '0.2.4'
+  s.version          = '0.2.5'
   s.summary          = 'A short description of TkfSDK.'
 
 # This description is used to generate tags and improve search results.
@@ -39,12 +39,12 @@ TODO: Add long description of the pod here.
 #     'TTSDK' => ['TTSDK/Assets/*']
 #   }
   s.vendored_frameworks = ['TTSDK/Classes/TkfSDK.framework'] #自己的framework在工程中的路径
-#  s.resource_bundles = {
-#      'Resources' => 'TTSDK/Assets/TkfBundle.bundle'
-#  }#资源文件的路径，会在pod中创建“Resources”的文件夹
-s.resource_bundles = {
-    'TTSDK' => 'TTSDK/Assets/**/*.{xcassets,png,xib,storyboard}'
-}#资源文件的路径，会在pod中创建“Resources”的文件夹
+  s.resource_bundles = {
+      'Resources' => 'TTSDK/Assets/TkfBundle.bundle'
+  }#资源文件的路径，会在pod中创建“Resources”的文件夹
+#s.resource_bundles = {
+#    'TTSDK' => 'TTSDK/Assets/**/*.{xcassets,png,xib,storyboard}'
+#}#资源文件的路径，会在pod中创建“Resources”的文件夹
   
    s.public_header_files = 'Pod/Classes/**/*.h'
    
@@ -56,7 +56,7 @@ s.resource_bundles = {
 
    s.dependency 'MJRefresh'
 
-   s.dependency 'JSONModel', '1.7.0'
+   s.dependency 'JSONModel'
 
    s.dependency 'Masonry'
 
@@ -80,7 +80,7 @@ s.resource_bundles = {
 
    s.dependency 'YBImageBrowser/Video'
 
-   s.dependency 'YYText','~> 1.0.7'
+   s.dependency 'YYText',
 
    s.dependency 'SocketRocket'
 
